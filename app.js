@@ -3,7 +3,7 @@ const bodyParser = require("body-parser")
 const app = express();
  
 app.get("/", function (req, res) {
-    req.send("server is up and running");
+    res.send("server is up and running");
 })
  
 app.listen(3000, function () {
